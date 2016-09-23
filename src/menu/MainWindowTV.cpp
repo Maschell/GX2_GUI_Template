@@ -29,6 +29,21 @@ MainWindowTV::MainWindowTV(int w, int h)
     bgImageColor.setImageColor((GX2Color){  248, 248, 249, 255 }, 2);
     bgImageColor.setImageColor((GX2Color){  248, 248, 249, 255 }, 3);
     append(&bgImageColor);
+        
+    // The below code will draw a pumpkin_pie.jpg mage from
+    // the /data folder when uncommented
+//    GuiImageData* pieImgData = Resources::GetImageData("pumpkin_pie.jpg");
+//    GuiImage* pie = new GuiImage(pieImgData);
+//    pie->setPosition(-200, 50); // moves left by 200, up 50 from the center
+//    append(pie);
+        
+    // The below code wll draw "Hello World!" as a string
+    // opionally underneath the pie, if it is available
+//    const char* cpName = "Hello World!";
+//    GuiText* hello = new GuiText(cpName, 28, glm::vec4(0, 0, 0, 1));
+//    hello->setAlignment(ALIGN_RIGHT | ALIGN_CENTER); // start from midright
+//    hello->setPosition(-250, 0); // move the text left 200 from the right
+//    append(hello);
 }
 
 MainWindowTV::~MainWindowTV()
