@@ -46,9 +46,6 @@ Application::Application()
     controller[3] = new WPadController(GuiTrigger::CHANNEL_4);
     controller[4] = new WPadController(GuiTrigger::CHANNEL_5);
     
-    //! load resources
-    Resources::LoadFiles("fs:/vol/content");
-
     //! create bgMusic
     bgMusic = new GuiSound(Resources::GetFile("bgMusic.ogg"), Resources::GetFileSize("bgMusic.ogg"));
     bgMusic->SetLoop(true);
