@@ -8,7 +8,7 @@ extern "C" {
 #include "os_defs.h"
 
 #define CAFE_OS_SD_PATH             "/vol/external01"
-#define SD_PATH                     "sd:"
+#define SD_PATH                     "fs:"
 #define WIIU_PATH                   "/wiiu"
 
 /* Macros for libs */

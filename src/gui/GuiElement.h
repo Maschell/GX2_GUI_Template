@@ -19,7 +19,6 @@
 
 #include <string>
 #include <vector>
-#include <gctypes.h>
 #include <malloc.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,11 +27,11 @@
 #include <wchar.h>
 #include <math.h>
 
+#include "common/types.h"
 #include "sigslot.h"
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 
-#include "dynamic_libs/gx2_types.h"
 #include "resources/Resources.h"
 #include "system/AsyncDeleter.h"
 #include "utils/logger.h"
@@ -492,6 +491,8 @@ class GuiElement : public AsyncDeleter::Element
 		sigslot::signal3<GuiElement *, int, int> stateChanged;
 		sigslot::signal1<GuiElement *> effectFinished;
 	protected:
+		f32 xoffset; //!< Element X offset
+		f32 yoffset; //!< Element Y offset
 		bool rumble; //!< Wiimote rumble (on/off) - set to on when this element requests a rumble event
 		bool visible; //!< Visibility of the element. If false, Draw() is skipped
 		bool selectable; //!< Whether or not this element selectable (can change to SELECTED state)
@@ -500,8 +501,6 @@ class GuiElement : public AsyncDeleter::Element
 		bool drawOverOnlyWhenSelected; //!< Whether or not this element is holdable (can change to HELD state)
 		f32 width; //!< Element width
 		f32 height; //!< Element height
-		f32 xoffset; //!< Element X offset
-		f32 yoffset; //!< Element Y offset
 		f32 zoffset; //!< Element Z offset
 		f32 alpha; //!< Element alpha value (0-255)
 		f32 angle; //!< Angle of the object (0-360)
