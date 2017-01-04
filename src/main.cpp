@@ -5,7 +5,7 @@
 #include "utils/logger.h"
 #include "utils/utils.h"
 #include "common/common.h"
-
+#include "resources/Resources.h"
 #include "main.h"
 
 /* Entry point */
