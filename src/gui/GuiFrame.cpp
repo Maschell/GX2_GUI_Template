@@ -230,6 +230,21 @@ void GuiFrame::update(GuiController * c)
 	}
 }
 
+
+void GuiFrame::process(){
+   if(isStateSet(STATE_DISABLED) && parentElement)
+		return;
+
+	GuiElement::process();
+
+	//! update appended items next frame
+	u32 size = elements.size();
+
+	for (u32 i = 0; i < size && i < elements.size(); ++i){
+		elements[i]->process();
+	}
+}
+
 void GuiFrame::updateElementList(void)
 {
     if(listChangeQueue.empty() == false)

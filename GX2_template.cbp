@@ -28,121 +28,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="build/Application.d" />
-		<Unit filename="build/AsyncDeleter.d" />
-		<Unit filename="build/BufferCircle.d" />
-		<Unit filename="build/CFile.d" />
-		<Unit filename="build/CVideo.d" />
-		<Unit filename="build/ColorShader.d" />
-		<Unit filename="build/DirList.d" />
-		<Unit filename="build/FXAAShader.d" />
-		<Unit filename="build/FreeTypeGX.d" />
-		<Unit filename="build/GameBgImage.d" />
-		<Unit filename="build/GameIcon.d" />
-		<Unit filename="build/GridBackground.d" />
-		<Unit filename="build/GuiButton.d" />
-		<Unit filename="build/GuiCheckBox.d" />
-		<Unit filename="build/GuiDragListener.d" />
-		<Unit filename="build/GuiElement.d" />
-		<Unit filename="build/GuiFrame.d" />
-		<Unit filename="build/GuiImage.d" />
-		<Unit filename="build/GuiImageAsync.d" />
-		<Unit filename="build/GuiImageData.d" />
-		<Unit filename="build/GuiParticleImage.d" />
-		<Unit filename="build/GuiSelectBox.d" />
-		<Unit filename="build/GuiSound.d" />
-		<Unit filename="build/GuiSwitch.d" />
-		<Unit filename="build/GuiText.d" />
-		<Unit filename="build/GuiToggle.d" />
-		<Unit filename="build/GuiTrigger.d" />
-		<Unit filename="build/MainWindow.d" />
-		<Unit filename="build/MainWindowTV.d" />
-		<Unit filename="build/Mp3Decoder.d" />
-		<Unit filename="build/OggDecoder.d" />
-		<Unit filename="build/Resources.d" />
-		<Unit filename="build/Scrollbar.d" />
-		<Unit filename="build/Shader3D.d" />
-		<Unit filename="build/ShaderFractalColor.d" />
-		<Unit filename="build/SoundDecoder.d" />
-		<Unit filename="build/SoundHandler.d" />
-		<Unit filename="build/StringTools.d" />
-		<Unit filename="build/Texture2DShader.d" />
-		<Unit filename="build/WavDecoder.d" />
-		<Unit filename="build/acp_functions.d" />
-		<Unit filename="build/aoc_functions.d" />
-		<Unit filename="build/ax_functions.d" />
-		<Unit filename="build/curl_functions.d" />
-		<Unit filename="build/entry.d" />
-		<Unit filename="build/exception_handler.d" />
-		<Unit filename="build/fs_functions.d" />
-		<Unit filename="build/fs_utils.d" />
-		<Unit filename="build/gx2_functions.d" />
-		<Unit filename="build/logger.d" />
-		<Unit filename="build/main.d" />
-		<Unit filename="build/memory.d" />
-		<Unit filename="build/os_functions.d" />
-		<Unit filename="build/padscore_functions.d" />
-		<Unit filename="build/sd_fat_devoptab.d" />
-		<Unit filename="build/socket_functions.d" />
-		<Unit filename="build/sys_functions.d" />
-		<Unit filename="build/syshid_functions.d" />
-		<Unit filename="build/vpad_functions.d" />
 		<Unit filename="src/Application.cpp" />
 		<Unit filename="src/Application.h" />
 		<Unit filename="src/common/common.h" />
+		<Unit filename="src/common/gx2_ext.h" />
 		<Unit filename="src/common/os_defs.h" />
 		<Unit filename="src/common/types.h" />
-		<Unit filename="src/dynamic_libs/acp_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/acp_functions.h" />
-		<Unit filename="src/dynamic_libs/aoc_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/aoc_functions.h" />
-		<Unit filename="src/dynamic_libs/ax_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/ax_functions.h" />
-		<Unit filename="src/dynamic_libs/curl_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/curl_functions.h" />
-		<Unit filename="src/dynamic_libs/fs_defs.h" />
-		<Unit filename="src/dynamic_libs/fs_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/fs_functions.h" />
-		<Unit filename="src/dynamic_libs/gx2_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/gx2_functions.h" />
-		<Unit filename="src/dynamic_libs/gx2_types.h" />
-		<Unit filename="src/dynamic_libs/os_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/os_functions.h" />
-		<Unit filename="src/dynamic_libs/os_types.h" />
+		<Unit filename="src/dynamic_libs/exports.h" />
 		<Unit filename="src/dynamic_libs/padscore_functions.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/dynamic_libs/padscore_functions.h" />
-		<Unit filename="src/dynamic_libs/socket_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/socket_functions.h" />
-		<Unit filename="src/dynamic_libs/sys_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/sys_functions.h" />
-		<Unit filename="src/dynamic_libs/syshid_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/syshid_functions.h" />
-		<Unit filename="src/dynamic_libs/vpad_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/dynamic_libs/vpad_functions.h" />
 		<Unit filename="src/entry.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -154,10 +50,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/fs/fs_utils.h" />
-		<Unit filename="src/fs/sd_fat_devoptab.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/fs/sd_fat_devoptab.h" />
 		<Unit filename="src/gui/FreeTypeGX.cpp" />
 		<Unit filename="src/gui/FreeTypeGX.h" />
 		<Unit filename="src/gui/GameBgImage.cpp" />
@@ -205,16 +97,6 @@
 		<Unit filename="src/gui/VPadController.h" />
 		<Unit filename="src/gui/WPadController.h" />
 		<Unit filename="src/gui/sigslot.h" />
-		<Unit filename="src/kernel/kernel_functions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/kernel/kernel_functions.h" />
-		<Unit filename="src/kernel/kernel_hooks.S" />
-		<Unit filename="src/kernel/syscalls.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/kernel/syscalls.h" />
-		<Unit filename="src/kernel/syscalls_asm.S" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/main.h" />
 		<Unit filename="src/menu/MainWindow.cpp" />
@@ -255,6 +137,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/utils/logger.h" />
+		<Unit filename="src/utils/utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/utils/utils.h" />
 		<Unit filename="src/video/CVideo.cpp" />
 		<Unit filename="src/video/CVideo.h" />

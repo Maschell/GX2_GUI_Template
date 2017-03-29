@@ -15,7 +15,7 @@ extern "C" int Menu_Main(void){
     //!*******************************************************************
     //! do OS (for acquire) and sockets first so we got logging
     InitPadScoreFunctionPointers();
-
+	socket_lib_init();
     log_init("192.168.0.181");
 
     //Otherwise apply the patches!!!
@@ -33,7 +33,7 @@ extern "C" int Menu_Main(void){
     Application::destroyInstance();
     memoryRelease();
 
-    log_print("Going back to the Homebrew launcher\n");
+    log_print("Leaving the application\n");
     log_deinit();
     
     return EXIT_SUCCESS;

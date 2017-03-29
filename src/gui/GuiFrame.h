@@ -74,6 +74,7 @@ class GuiFrame : public GuiElement
 		//!Allows the GuiFrame and all elements to respond to the input data specified
 		//!\param t Pointer to a GuiTrigger, containing the current input data from PAD/WPAD
 		void update(GuiController * t);
+		void process();
 		//!virtual Close Window - this will put the object on the delete queue in MainWindow
 		virtual void close();
 		//!virtual show window function

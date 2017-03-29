@@ -160,7 +160,7 @@ install_channel: $(BUILD) NUSPacker.jar encryptKeyWith
 	java -jar NUSPacker.jar -in "channel" -out "install_channel"
 
 NUSPacker.jar:
-	wget https://bitbucket.org/timogus/nuspacker/downloads/NUSPacker.jar
+	java -jar downloader.jar https://bitbucket.org/timogus/nuspacker/downloads/NUSPacker.jar
 
 encryptKeyWith:
 	@echo "Missing common key file \"encryptKeyWith\"! Insert the common key as string into \"encryptKeyWith\" file in the HBL Makefile path!"
